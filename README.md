@@ -49,7 +49,7 @@ Mac是默认安装了 Python 2.7 版本在／System目录下。
 在Versions的目录里有一个Current的link，是指向当前的Python版本，原始是指向系统自带的Python-2.7，我们把它删除后，link就失效了，所以需要重新链一下
 
 
-    sudo rm /System/Library/Frameworks/Python.framework/Versions/Current
+    sudo rm /System/Library/Frameworks/Python.framework/Versions/Current  
     sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6 /System/Library/Frameworks/Python.framework/Versions/Current
 
 
@@ -66,10 +66,11 @@ Mac是默认安装了 Python 2.7 版本在／System目录下。
 - 建立新链接
 
 
-    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/pydoc3.6 /usr/bin/pydoc
-    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /usr/bin/python
-    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/pythonw3.6 /usr/bin/pythonw
-    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6m-config /usr/bin/python-config
+
+    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/pydoc3.6 /usr/bin/pydoc  
+    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /usr/bin/python  
+    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/pythonw3.6 /usr/bin/pythonw  
+    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6m-config /usr/bin/python-config  
     
     
 ### 第八步 配置全局环境
