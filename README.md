@@ -57,20 +57,23 @@ Mac是默认安装了 Python 2.7 版本在／System目录下。
 
 - 修改原执行路径
 
-
-    sudo rm /usr/bin/pydoc
-    sudo rm /usr/bin/python
-    sudo rm /usr/bin/pythonw
-    sudo rm /usr/bin/python-config
+    ```
+    sudo rm /usr/bin/pydoc  
+    sudo rm /usr/bin/python  
+    sudo rm /usr/bin/pythonw  
+    sudo rm /usr/bin/python-config  
+    ```
+    
     
 - 建立新链接
 
 
-
+    ```
     sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/pydoc3.6 /usr/bin/pydoc  
     sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /usr/bin/python  
     sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/pythonw3.6 /usr/bin/pythonw  
     sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6m-config /usr/bin/python-config  
+    ```
     
     
 ### 第八步 配置全局环境
