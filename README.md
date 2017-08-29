@@ -27,6 +27,7 @@ Mac是默认安装了 Python 2.7 版本在／System目录下。
 
 ### 第三步 删除旧版本
 
+旧版本删除会影响git和Xcode运行，所以这一步也可以省略，对后续并没有什么影响
 在终端执行
 
     sudo rm -R /System/Library/Frameworks/Python.framework/Versions/2.7
